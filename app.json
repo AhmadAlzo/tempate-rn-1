@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "cash",
-    "slug": "cash",
+    "name": "fabric",
+    "slug": "fabric",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/Launch-Screen.png",
+      "image": "./assets/images/splash.jpeg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

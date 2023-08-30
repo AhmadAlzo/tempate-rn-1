@@ -1,8 +1,10 @@
-import HomeScreen from "../screen/HomeScreen";
-import { Entypo } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
+import HomeScreen from "../screen/mainPages/HomeScreen"
+import ContactScreen from "../screen/mainPages/ContactScreen";
+
 const Tab = createBottomTabNavigator();
 function BottomTabs() {
     return (
@@ -22,10 +24,9 @@ function BottomTabs() {
               ),
           }}
         />
-
         <Tab.Screen
           name="Media"
-          component={HomeScreen}
+          component={ContactScreen}
           options={{
             tabBarLabel: "Media",
             headerShown: false,
@@ -38,7 +39,6 @@ function BottomTabs() {
               ),
           }}
         />
-
         <Tab.Screen
           name="Cart"
           component={HomeScreen}

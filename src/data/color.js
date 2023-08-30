@@ -1,9 +1,10 @@
 export const appColors={
+    status:"#110134",
+    yellow:"#ae6100",
     blue:'#2743FD',
     violet:"#7C2AFF",
     cercet1:"#F5F6FA",
     black:"#000",
-    yellow:"#FFC107",
     redOrange:"#FF3D00",
     red:"#E80057",
     darkGray:"#929292",

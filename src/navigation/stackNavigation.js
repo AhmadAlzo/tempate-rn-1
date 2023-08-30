@@ -3,13 +3,15 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { KeyboardAvoidingView, Platform, ActivityIndicator, View } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useState, useEffect } from "react";
-import LoginScreen from "../screen/LoginScreen";
-import RegisterScreen from "../screen/RegisterScreen";
-import WelcomScreen from "../screen/WelcomScreen";
+
+
+import LoginScreen from "../screen/registers/LoginScreen";
+import RegisterScreen from "../screen/registers/RegisterScreen";
+import WelcomScreen from "../screen/registers/WelcomScreen";
 import BottomTabs from "./BottomTabs";
 import { useAuth } from "../contexts/Auth";
-import LoginRegister from "../screen/Login_Register";
-import OtpScreen from "../screen/Otp"
+// import LoginRegister from "../screen/registers/Login_Register";
+import FinelSetting from "../screen/registers/FinelSetting";
 const Stack = createNativeStackNavigator();
 function StackNavigation() {
     const [userInfo, setUserInfo] = useAuth();
@@ -64,11 +66,6 @@ function StackNavigation() {
                                     options={{ headerShown: false }}
                                 />
                                 <Stack.Screen
-                                    name="Login_Register"
-                                    component={LoginRegister}
-                                    options={{ headerShown: false }}
-                                />
-                                <Stack.Screen
                                     name="Login"
                                     component={LoginScreen}
                                     options={{ headerShown: false }}
@@ -79,10 +76,11 @@ function StackNavigation() {
                                     options={{ headerShown: false }}
                                 />
                                 <Stack.Screen
-                                    name="OTP"
-                                    component={OtpScreen}
+                                    name="someSetting"
+                                    component={FinelSetting}
                                     options={{ headerShown: false }}
                                 />
+                                
                             </>
                         )
                     }
